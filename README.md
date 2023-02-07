@@ -25,6 +25,7 @@ int main()
     return 0;
 }
 ```
+10. Add the main.cpp to your project and make sure to put the data folder in the directory containing the project file (.vcxproj)
 
 ## How to use:
 You have to specify the URL you want to send the request to:
