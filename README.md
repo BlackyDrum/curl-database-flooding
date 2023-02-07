@@ -11,7 +11,7 @@
 7. Add the library directory to Visual Studio: In Visual Studio, go to "Project" -> "Properties" -> "VC++ Directories" -> "Library Directories". Add the path to the lib directory of the extracted cURL library: ``` C:\curl\builds\libcurl-vc-x86-release-static-ipv6-sspi-winssl\lib\ ```
 8. Link the library to your project: In Visual Studio, go to "Project" -> "Properties" -> "Linker" -> "Input" -> "Additional Dependencies" and add ``` Ws2_32.lib ```, ``` libcurl_a.lib ```, ``` Crypt32.lib ```, ``` Wldap32.lib ```, ``` Normaliz.lib ```
 9. You can try to build this sample program:
-```
+```c++
 #define CURL_STATICLIB
 #include <curl\curl.h>
 
