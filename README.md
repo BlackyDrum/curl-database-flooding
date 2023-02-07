@@ -36,9 +36,16 @@ After that, you need to choose the HTTP-Method the server is expecting, most com
 curl_easy_setopt(curl, CURLOPT_POST, 1L);
 // OR curl_easy_setopt(curl, CURLOPT_HTTPGET, 1L);
 ```
-You can choose the amount of requests:
+You can choose the amount of requests you want to send to the server:
 ```c++
 int loopAmount = 1;
 ```
+You have to specify the form data to be sent in the request:
+```c++
+std::string data = "email=" + localPart + randomNum + "@" + domainPart + 
+                   "&password=" + password;
+// Add more parameters with "&param="
+```
+Try to run. A random Email Address and Password will be generated every loop.
 
 *NOTE:* <b> The code provided in this repository is for educational purposes only and should not be used for harmful purposes. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the code or the use or other dealings in the code. </b>
