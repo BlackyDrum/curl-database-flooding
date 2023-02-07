@@ -26,4 +26,10 @@ int main()
 }
 ```
 
+## How to use:
+1. You have to specify the URL you want to send the request to:
+```c++
+std::string url = "www.example.com";
+```
+
 *NOTE:* <b> The code provided in this repository is for educational purposes only and should not be used for harmful purposes. In no event shall the authors or copyright holders be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the code or the use or other dealings in the code. </b>
