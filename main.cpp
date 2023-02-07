@@ -71,7 +71,7 @@ int main() {
     if (curl) {
         
         /* Set the URL to send the request to */
-        std::string url = "www.example.com";
+        const char* url = "www.example.com";
         curl_easy_setopt(curl, CURLOPT_URL, url);
 
         /* Set the request type to POST OR GET */
