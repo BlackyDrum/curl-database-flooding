@@ -30,7 +30,7 @@ int main()
 ## How to use:
 You have to specify the URL you want to send the request to:
 ```c++
-std::string url = "www.example.com";
+const char* url = "www.example.com";
 ```
 After that, you need to choose the HTTP-Method the server is expecting, most commonly POST for forms:
 ```c++
